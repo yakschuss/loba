@@ -85,7 +85,7 @@ module Loba
       @loba_logger ||= Internal::Platform.logger
 
       tag = Internal.calling_tag(depth+1)
-      name = argument.is_a?(Symbol) ? "#{argument.to_s}:" : nil
+      name = argument.is_a?(Symbol) ? "#{argument}:" : nil
 
       text = if label.nil?
                name
